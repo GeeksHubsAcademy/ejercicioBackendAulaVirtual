@@ -1,0 +1,24 @@
+{
+  "name": "backendaulavirtual",
+  "version": "1.0.0",
+  "description": "REST API for the \"Aula Virtual\" international project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Geek'sHubs",
+    "AulaVirtual",
+    "RESTAPI"
+  ],
+  "author": "Geek's Hubs Academy",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.0.16"
+  }
+}

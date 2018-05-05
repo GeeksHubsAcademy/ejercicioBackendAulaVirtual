@@ -7,7 +7,7 @@ User = require('./api/models/usersListModel')
 bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/backendaulavirtual');
+mongoose.connect('mongodb://localhost/bkAulaVirtual');
 
 app.use(function (req, res, next) {
 

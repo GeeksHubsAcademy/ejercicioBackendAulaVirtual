@@ -42,6 +42,14 @@ exports.delete_a_user = function(req, res){
 	},function(err,user){
 		if(err)
 			res.send(err);
-		res.json({message:'User succesfully deleted'});
+		res.json({message:'Usuario eliminado correctamente'});
 	});
 };
+
+exports.assing_session = function(req,res){
+	User.update({
+		_id: req.params.userId
+	},{
+		$push:{sessions:session}
+	})
+}

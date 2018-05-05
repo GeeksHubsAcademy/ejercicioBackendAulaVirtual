@@ -14,5 +14,7 @@ module.exports = function(app){
 		.put(usersList.update_a_user)
 		.delete(usersList.delete_a_user);
 
+	app.route('/users/:userId/session')
+		.post(usersList.assing_session)
 };
 
